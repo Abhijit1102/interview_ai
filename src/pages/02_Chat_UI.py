@@ -50,7 +50,7 @@ logging.info("System message generated.")
 
 # Initialize Chat Model
 try:
-    model = ChatOpenAI(model="gpt-3.5-turbo", temperature=1, api_key=openai_api_key)
+    model = ChatOpenAI(model="gpt-3.5-turbo", temperature=0.5, api_key=openai_api_key)
     logging.info("ChatOpenAI model initialized successfully.")
 except Exception as e:
     logging.error(f"Error initializing ChatOpenAI: {e}")
